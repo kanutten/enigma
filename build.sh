@@ -10,14 +10,14 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux flameshot nextcloud-client nextcloud-client-nautilus
+#dnf install -y tmux flameshot nextcloud-client nextcloud-client-nautilus
 
 # Use a COPR Example:
 #
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
+ dnf5 -y copr enable ublue-os/staging
+ dnf5 -y install -y tmux flameshot nextcloud-client nextcloud-client-nautilus
 # Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+ dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
 
