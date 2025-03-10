@@ -15,7 +15,7 @@ set -ouex pipefail
 # Use a COPR Example:
 #
  dnf5 -y copr enable ublue-os/staging
- dnf5 -y install -y tmux flameshot nextcloud-client nextcloud-client-nautilus
+ dnf5 -y install -y flameshot nextcloud-client nextcloud-client-nautilus
 # Disable COPRs so they don't end up enabled on the final image:
  dnf5 -y copr disable ublue-os/staging
 
